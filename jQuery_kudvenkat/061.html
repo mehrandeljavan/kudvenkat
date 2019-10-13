@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnGetEmployee').click(function () {
+
+                var empId = $('#txtId').val();
+
+                $.ajax({
+                    url: '061_EmployeeService.asmx/GetEmployeeById',
+                    data: { employeeId: empId },
+                    method: 'post',
+                    dataType: 'xml',
+                    success: function (data) {
+                        var jQueryXml = $(data);
+                        $('#txtName').val(jQueryXml.find('Name').text());
+                        $('#txtGender').val(jQueryXml.find('Gender').text());
+                        $('#txtSalary').val(jQueryXml.find('Salary').text());
+                    },
+                    error: function (err) {
+                        alert(err);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body style="font-family:Arial">
+    ID : <input id="txtId" type="text" style="width:100px" />
+    <input type="button" id="btnGetEmployee" value="Get Employee" />
+    <br /><br />
+    <table border="1" style="border-collapse:collapse">
+        <tr>
+            <td>Name</td>
+            <td><input id="txtName" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input id="txtGender" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Salary</td>
+            <td><input id="txtSalary" type="text" /></td>
+        </tr>
+    </table>
+</body>
+</html>

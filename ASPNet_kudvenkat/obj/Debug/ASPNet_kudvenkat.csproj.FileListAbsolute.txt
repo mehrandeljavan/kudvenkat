@@ -1,0 +1,13 @@
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\bin\ASPNet_kudvenkat.dll.config
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\bin\ASPNet_kudvenkat.dll
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\bin\ASPNet_kudvenkat.pdb
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.csprojAssemblyReference.cache
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.csproj.CoreCompileInputs.cache
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.dll
+D:\_Templates\ASPNet_kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.pdb
+D:\_Templates\Kudvenkat\ASPNet_kudvenkat\bin\ASPNet_kudvenkat.dll.config
+D:\_Templates\Kudvenkat\ASPNet_kudvenkat\bin\ASPNet_kudvenkat.dll
+D:\_Templates\Kudvenkat\ASPNet_kudvenkat\bin\ASPNet_kudvenkat.pdb
+D:\_Templates\Kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.csprojResolveAssemblyReference.cache
+D:\_Templates\Kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.dll
+D:\_Templates\Kudvenkat\ASPNet_kudvenkat\obj\Debug\ASPNet_kudvenkat.pdb

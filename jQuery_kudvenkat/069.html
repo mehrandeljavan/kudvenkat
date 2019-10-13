@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var floatingDiv = $("#divfloating");
+            var floatingDivPosition = floatingDiv.position();
+            $(window).scroll(function () {
+                var scrollPosition = $(window).scrollTop();
+                if (scrollPosition >= floatingDivPosition.top) {
+                    floatingDiv.css({
+                        'position': 'fixed',
+                        'top': 3
+                    });
+                } else {
+                    floatingDiv.css({
+                        'position': 'relative',
+                        'top': 0
+                    });
+                }
+
+                floatingDiv.html('Window Height = ' + $(window).height() + '<br/>' +
+                        'Document Height = ' + $(document).height() + '<br/>' +
+                        'Vertical Scrollbar Position = ' + scrollPosition
+                    );
+
+                if (scrollPosition == $(document).height() - $(window).height()) {
+                    floatingDiv.html('Reached the bottom of the page');
+                }
+            });
+        });
+    </script>
+</head>
+<body style="font-family:Arial;">
+    <table align="center" border="1" style="border-collapse:collapse">
+        <tr>
+            <td style="width:500px">
+                <div>
+                    Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.Main Page Content.
+                </div>
+            </td>
+            <td style="width:150px; vertical-align:top">
+                Side panel content
+                <br /><br />
+                <div id="divfloating" style="background-color:silver; width:150px; height:150px">
+                    Floating Div - Keeps floating as you scroll down the page
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

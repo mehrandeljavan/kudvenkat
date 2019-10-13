@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="jquery.min.js"></script>
+    <link href="jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="jquery.dataTables.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                url: '106_Employee2Service.asmx/GetEmployees',
+                method: 'post',
+                dataType: 'json',
+                success: function (data) {
+                    var datatableInstance = $('#datatable').DataTable({
+                        paging: true,
+                        sort: true,
+                        searching: true,
+                        data: data,
+                        columns: [
+                            { 'data': 'Id' },
+                            { 'data': 'FirstName' },
+                            { 'data': 'LastName' },
+                            { 'data': 'Gender' },
+                            { 'data': 'JobTitle' },
+                            {
+                                'data': 'WebSite',
+                                'sortable': false,
+                                'searchable': true,
+                                'render': function (webSite) {
+                                    if (!webSite) {
+                                        return 'N/A';
+                                    }
+                                    else {
+                                        return '<a href=' + webSite + '>'
+                                            + webSite.substr(0, 10) + '...' + '</a>';
+                                    }
+                                }
+                            },
+                            {
+                                'data': 'Salary',
+                                'render': function (salary) {
+                                    return "$" + salary;
+                                }
+                            },
+                            {
+                                'data': 'HireDate',
+                                'render': function (jsonDate) {
+                                    var date = new Date(parseInt(jsonDate.substr(6)));
+                                    var month = date.getMonth() + 1;
+                                    return month + "/" + date.getDate() + "/" + date.getFullYear();
+                                }
+                            }
+                        ]
+                    });
+
+
+                    $('#datatable tfoot th').each(function () {
+                        var title = $('#datatable thead th').eq($(this).index()).text();
+                        $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+                    });
+
+                    datatableInstance.columns().every(function () {
+                        var dataTableColumn = this;
+
+                        $(this.footer()).find('input').on('keyup change', function () {
+                            dataTableColumn.search(this.value).draw();
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+<body style="font-family: Arial">
+    <form id="form1" runat="server">
+        <div style="width: 1700px; border: 1px solid black; padding: 3px">
+            <table id="datatable">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Job Title</th>
+                        <th>Web Site</th>
+                        <th>Salary</th>
+                        <th>Hire Date</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Job Title</th>
+                        <th>Web Site</th>
+                        <th>Salary</th>
+                        <th>Hire Date</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
