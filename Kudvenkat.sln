@@ -1,11 +1,53 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQuery_kudvenkat", "jQuery_kudvenkat\jQuery_kudvenkat.csproj", "{A7C1637F-FDA5-4572-8C5A-A7DA6E115CBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNet_kudvenkat", "ASPNet_kudvenkat\ASPNet_kudvenkat.csproj", "{292795E1-76F8-4D10-B9EF-55EFC57FC4F1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Bootstrap_kudvenkat", "Bootstrap_kudvenkat\", "{CE1B877D-85DB-4609-AA7B-FD676591742C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_27199"
+		Debug.AspNetCompiler.PhysicalPath = "Bootstrap_kudvenkat\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_27199\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_27199"
+		Release.AspNetCompiler.PhysicalPath = "Bootstrap_kudvenkat\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_27199\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "27199"
+		SlnRelativePath = "Bootstrap_kudvenkat\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Javascript_kudvenkat", "Javascript_kudvenkat\", "{988C9F65-6D35-46C1-882E-3D7783CFC3FA}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_27201"
+		Debug.AspNetCompiler.PhysicalPath = "Javascript_kudvenkat\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_27201\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_27201"
+		Release.AspNetCompiler.PhysicalPath = "Javascript_kudvenkat\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_27201\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "27201"
+		SlnRelativePath = "Javascript_kudvenkat\"
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +63,19 @@ Global
 		{292795E1-76F8-4D10-B9EF-55EFC57FC4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{292795E1-76F8-4D10-B9EF-55EFC57FC4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{292795E1-76F8-4D10-B9EF-55EFC57FC4F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE1B877D-85DB-4609-AA7B-FD676591742C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1B877D-85DB-4609-AA7B-FD676591742C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE1B877D-85DB-4609-AA7B-FD676591742C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE1B877D-85DB-4609-AA7B-FD676591742C}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A10FE6F-4BD0-41D9-89E0-E7E496C5A579}
 	EndGlobalSection
 EndGlobal
