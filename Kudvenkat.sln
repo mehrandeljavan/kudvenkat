@@ -49,6 +49,26 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Javascript_kudvenkat", "Jav
 		SlnRelativePath = "Javascript_kudvenkat\"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASPNetWebAPI_kudvenkat", "ASPNetWebAPI_kudvenkat\", "{0975FAFF-5900-41D1-9626-86857001103B}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_9402"
+		Debug.AspNetCompiler.PhysicalPath = "ASPNetWebAPI_kudvenkat\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9402\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_9402"
+		Release.AspNetCompiler.PhysicalPath = "ASPNetWebAPI_kudvenkat\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_9402\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "9402"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +91,10 @@ Global
 		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{988C9F65-6D35-46C1-882E-3D7783CFC3FA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0975FAFF-5900-41D1-9626-86857001103B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0975FAFF-5900-41D1-9626-86857001103B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0975FAFF-5900-41D1-9626-86857001103B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0975FAFF-5900-41D1-9626-86857001103B}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
